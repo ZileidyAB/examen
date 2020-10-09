@@ -1,7 +1,7 @@
 import './App.css';
 import "antd/dist/antd.css";
 import React from 'react';
-import { Layout, Menu, Row, Col, Space, Button, message} from 'antd';
+import { Layout, Menu, Row, Col, Space, Button, message, Divider} from 'antd';
 import {SearchOutlined } from '@ant-design/icons';
 import PokemonList from './PokemonList.js'
 import EmpresaDatos from './EmpresaDatos.js'
@@ -39,7 +39,8 @@ function App() {
 
       <Content style={{ padding: '0 50px' }}>
         <div className="site-layout-content">
-          <h1><b>CATALOGO DE POKEMONES</b></h1><br></br>
+          <h1><b>CATALOGO DE POKEMONES</b></h1>
+          <Divider />
           <PokemonList />
         </div>
       </Content>
